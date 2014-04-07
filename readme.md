@@ -26,3 +26,10 @@ server_updateObject.sqf
 		_key call server_hiveWrite;
 		_object setVariable ["needUpdate",false,true];
 	};
+	
+	
+	
+server_functions.sqf
+
+	/* Serverside loot */
+	server_vehicleloot = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\mods\vLoot\veh_Droploot.sqf";
